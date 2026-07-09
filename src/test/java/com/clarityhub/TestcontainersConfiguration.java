@@ -14,7 +14,6 @@ public class TestcontainersConfiguration {
     PostgreSQLContainer<?> postgresContainer() {
         return new PostgreSQLContainer<>(
                 DockerImageName.parse("pgvector/pgvector:pg16")
-                        .asCompatibleSubstituteFor("postgres")
-        );
+                        .asCompatibleSubstituteFor("postgres"));
     }
 }
