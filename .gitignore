@@ -1,0 +1,25 @@
+# Compiled output
+target/
+*.class
+*.jar
+*.war
+
+# Maven
+.mvn/repository/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Environment — never commit real credentials
+.env
+*.env
+*.env.*
+infra/.env
+
+# OS
+.DS_Store
+
+# Logs
+*.log
