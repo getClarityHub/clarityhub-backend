@@ -1,10 +1,5 @@
-spring:
-  datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-
-# API docs are never exposed in production
+# Prod profile: datasource values inherit from application.yml (env vars).
+# API docs are never exposed in production — attackers get no free API map.
 springdoc:
   api-docs:
     enabled: false
