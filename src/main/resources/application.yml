@@ -1,6 +1,13 @@
 spring:
   application:
     name: clarityhub-backend
+  # Datasource values come from environment variables — never commit real values.
+  # See infra/.env.example for the required keys. Profile-specific files should
+  # only override when a setting must differ by environment.
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: validate

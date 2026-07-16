@@ -1,9 +1,5 @@
-spring:
-  datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-
+# Local profile: datasource values inherit from application.yml (env vars).
+# Only override what actually differs on a developer laptop.
 logging:
   level:
     com.clarityhub: DEBUG
